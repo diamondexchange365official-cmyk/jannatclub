@@ -21,6 +21,20 @@ npm run build
 
 The `dist` directory is a standalone static site. Serve it with any static web host. Source images remain in `public/images`.
 
+## Deploy to Vercel
+
+Import this repository with the project root set to the repository root. The
+committed `vercel.json` selects the **Other** framework preset, runs
+`npm run build`, and serves `dist` as the static output directory.
+
+`server.mjs` is only the local development server. The deployed site does not
+need a Node.js function or a running server. Serving `dist` provides
+`index.html`, `styles.css`, `app.js`, and `/images/` at their expected URLs.
+
+Vercel deploys new commits automatically when its Git integration is enabled.
+After deployment, check `/`, `/styles.css`, `/app.js`, and an image under
+`/images/`; each should return HTTP 200.
+
 ## Features
 
 - Responsive desktop and mobile navigation
