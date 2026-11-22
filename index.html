@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101014">
+  <meta name="description" content="Discover Jannat Club. Your visual guide to registration, app setup, game categories, wallet features, and more.">
+  <title>Jannat Club — Your complete game guide</title>
+  <link rel="icon" type="image/jpeg" href="/images/jannat_club_logo.jpeg">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+    <symbol id="i-crown" viewBox="0 0 24 24"><path d="m3 6 4 4 5-7 5 7 4-4-2 13H5L3 6Zm3 10h12"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m8 5 7 7-7 7"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M20 7H5a2 2 0 0 1 0-4h13v4M3 5v14a2 2 0 0 0 2 2h15V7m0 5h-6v5h6"/><path d="M16 14.5h.01"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><path d="M3 10h18V6H3v4Zm2 0v11h14V10M12 6v15"/><path d="M12 6S5 7 6 3s6 3 6 3Zm0 0s7 1 6-3-6 3-6 3Z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="7" r="4"/><path d="M2 21v-3a7 7 0 0 1 14 0v3m0-18a4 4 0 0 1 0 8m3 4a6 6 0 0 1 3 6"/></symbol>
+    <symbol id="i-dice" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 8h.01M16 8h.01M12 12h.01M8 16h.01M16 16h.01" stroke-width="3.5"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="m13 2-9 12h7l-1 8 10-13h-8l1-7Z"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M9 3H3v6m12-6h6v6M3 15v6h6m6 0h6v-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+  </svg>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+
+  <header class="site-header">
+    <div class="header-inner shell">
+      <a class="brand" href="#home" aria-label="Jannat Club home">
+        <span class="brand-mark"><svg class="icon"><use href="#i-crown"/></svg><span>J</span></span>
+        <span class="brand-name">JANNAT<span>CLUB</span><small>THE GAME STARTS HERE</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#home" class="current">Home</a><a href="#guides">How it works</a><a href="#games">Games</a><a href="#faq">FAQs</a><a href="#about">About us</a>
+      </nav>
+      <div class="header-actions"><button class="login-button" data-action="login">Log in <span>↗</span></button><button class="button button-gold button-small" data-action="register">Get started <svg class="icon"><use href="#i-arrow"/></svg></button></div>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#home">Home</a><a href="#guides">How it works</a><a href="#games">Games</a><a href="#faq">FAQs</a><a href="#about">About us</a><button data-action="login">Log in ↗</button></nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> WELCOME TO THE CLUB <span class="eyebrow-line"></span></div>
+        <h1 id="hero-title">A world of games.<br>A touch of <em>Jannat.</em></h1>
+        <p class="hero-description">Your complete guide to Jannat Club. Discover the games, find your way around, and get started with our simple, visual walkthroughs.</p>
+        <div class="hero-buttons"><button class="button button-gold" data-action="register">Explore Jannat Club <svg class="icon"><use href="#i-arrow"/></svg></button><button class="button button-outline" data-action="download"><svg class="icon"><use href="#i-download"/></svg> Download app</button></div>
+        <div class="hero-meta"><span><svg class="icon"><use href="#i-grid"/></svg> Multiple game categories</span><i></i><span><svg class="icon"><use href="#i-clock"/></svg> A guide at every step</span></div>
+        <div class="hero-note"><span>18+</span> For adults. Play responsibly. Outcomes are never guaranteed.</div>
+      </div>
+      <div class="hero-art" aria-label="Jannat Club app preview">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="art-star star-one">✦</span><span class="art-star star-two">✧</span><span class="art-star star-three">✦</span>
+        <div class="gold-disc"><img src="/images/jannat_club_logo.jpeg" alt="Jannat Club gold crown logo" width="640" height="640" fetchpriority="high"></div>
+        <div class="hero-phone"><div class="phone-camera"></div><img src="/images/jannat_club_homepage.jpeg" alt="Jannat Club home screen showing game categories" width="399" height="944" fetchpriority="high"></div>
+        <div class="floating-label"><span class="floating-icon"><svg class="icon"><use href="#i-crown"/></svg></span><span>One club. More possibilities.<small>DISCOVER YOUR NEXT GAME</small></span></div>
+        <div class="art-caption"><span></span> THE JANNAT CLUB EXPERIENCE</div>
+      </div>
+    </section>
+
+    <div class="feature-strip"><div class="shell feature-strip-inner"><span><svg class="icon"><use href="#i-grid"/></svg> Explore the lobby</span><i>✦</i><span><svg class="icon"><use href="#i-dice"/></svg> Find your game</span><i>✦</i><span><svg class="icon"><use href="#i-wallet"/></svg> Understand your wallet</span><i>✦</i><span><svg class="icon"><use href="#i-gift"/></svg> Discover club features</span></div></div>
+
+    <div class="content-layout shell" id="guides">
+      <aside class="guide-sidebar" aria-label="Guide contents">
+        <div class="sidebar-top"><span class="eyebrow">THE CLUB HANDBOOK</span><h2>Find your way.</h2><p>Everything you need, one step at a time.</p></div>
+        <form class="guide-search" role="search"><svg class="icon"><use href="#i-search"/></svg><label class="sr-only" for="guide-search">Find a guide</label><input id="guide-search" type="search" placeholder="Find a guide…" autocomplete="off"><kbd>/</kbd></form>
+        <p class="search-feedback" aria-live="polite"></p>
+        <nav class="toc" aria-label="On this page">
+          <a href="#overview" class="active" data-search="overview about app features"><svg class="icon"><use href="#i-grid"/></svg> Club overview <svg class="icon chevron"><use href="#i-chevron"/></svg></a>
+          <a href="#registration" data-search="registration register signup account"><span>01</span> Create an account</a>
+          <a href="#login" data-search="login sign in password"><span>02</span> Log in to the club</a>
+          <a href="#download" data-search="download apk install android app"><span>03</span> Download the app</a>
+          <a href="#deposit" data-search="deposit payment upi recharge wallet"><span>04</span> Add to your wallet</a>
+          <a href="#bank-account" data-search="bank account ifsc details"><span>05</span> Link a bank account</a>
+          <a href="#wingo" data-search="wingo play colour prediction number"><span>06</span> Discover Wingo</a>
+          <a href="#referral" data-search="referral invite friends promotion agency"><span>07</span> Invite your friends</a>
+          <a href="#withdrawal" data-search="withdrawal withdraw wallet money"><span>08</span> Withdraw balance</a>
+          <a href="#gift-code" data-search="gift code redeem bonus"><span>09</span> Redeem a gift code</a>
+        </nav>
+        <div class="sidebar-help"><svg class="icon"><use href="#i-shield"/></svg><strong>Keep play in perspective.</strong><p>Set your limits. Take breaks. Make room for life beyond the screen.</p><a href="#responsible-gaming">Responsible gaming <span>↗</span></a></div>
+        <span class="sidebar-footnote">YOUR GUIDE. YOUR PACE.</span>
+      </aside>
+
+      <div class="guide-content">
+        <section id="overview" class="overview observed-section">
+          <div class="section-kicker"><span>THE JANNAT CLUB GUIDE</span><span class="mini-badge">QUICK START</span></div>
+          <h2>Welcome to your <span class="gold-text">next chapter.</span></h2>
+          <p>From the first sign-up to finding your way through the lobby, a little guidance goes a long way. Get to know the app with real screenshots and clear instructions, all in one place.</p>
+          <div class="overview-card"><div class="overview-brand"><img src="/images/jannat_club_logo.jpeg" alt="Jannat Club" width="640" height="640" loading="lazy"><span>JANNAT CLUB<small>AT A GLANCE</small></span></div><dl><div><dt>Experience</dt><dd>Lottery, arcade & casino-style games</dd></div><div><dt>Access</dt><dd>Mobile browser & Android app</dd></div><div><dt>In this guide</dt><dd>9 visual walkthroughs</dd></div><div><dt>Getting started</dt><dd><a href="#registration">Registration & account setup <span>↗</span></a></dd></div></dl></div>
+          <div class="section-link-row"><span><span class="purple-dot"></span> New to the club? Start with step 01.</span><button class="text-button" id="copy-guide"><svg class="icon"><use href="#i-copy"/></svg> Share this guide</button></div>
+        </section>
+
+        <section class="games-section observed-section" id="games">
+          <div class="section-kicker"><span>A LITTLE SOMETHING FOR EVERY MOOD</span></div>
+          <div class="section-heading-row"><h2>Explore the <span class="gold-text">game room.</span></h2><span class="muted-label">FIND YOUR FAVOURITE</span></div>
+          <div class="game-filters" role="group" aria-label="Filter game categories"><button class="selected" data-filter="all" aria-pressed="true">All games</button><button data-filter="lottery" aria-pressed="false">Lottery</button><button data-filter="arcade" aria-pressed="false">Arcade & mini</button><button data-filter="casino" aria-pressed="false">Casino</button></div>
+          <div class="game-grid">
+            <a class="game-card game-wingo" href="#wingo" data-category="lottery"><span class="game-tag">LOTTERY</span><div class="game-visual number-balls"><span>3</span><span>7</span><span>9</span></div><div><h3>Wingo</h3><p>Colours. Numbers. Quick rounds.</p></div><span class="game-arrow">↗</span></a>
+            <a class="game-card game-arcade" href="#game-categories" data-category="arcade"><span class="game-tag">ARCADE & MINI</span><div class="game-visual"><svg class="icon large-zap"><use href="#i-zap"/></svg><span class="visual-ring"></span></div><div><h3>Arcade favourites</h3><p>Discover a different pace.</p></div><span class="game-arrow">↗</span></a>
+            <a class="game-card game-casino" href="#game-categories" data-category="casino"><span class="game-tag">CASINO</span><div class="game-visual playing-cards"><span>♠<small>A</small></span><span>♦<small>A</small></span></div><div><h3>Casino classics</h3><p>A familiar world to explore.</p></div><span class="game-arrow">↗</span></a>
+          </div><p class="game-result sr-only" aria-live="polite">Showing all 3 game categories.</p>
+          <details class="category-details" id="game-categories"><summary>More about the game categories <span>+</span></summary><div><p><strong>Lottery:</strong> The supplied lobby includes Trx Wingo and MotoRace. Wingo offers colour and number choices across different round lengths.</p><p><strong>Arcade & mini games:</strong> The lobby shows AirJet, Cryptos, Mines, and a separate mini-game collection.</p><p><strong>Casino:</strong> Browse the Casino category in the app for its current catalogue. Availability and rules can change; read the individual game's instructions.</p></div></details>
+        </section>
+
+        <div class="walkthrough-intro"><span class="eyebrow">A SIMPLE START</span><h2>Your club journey, <em>step by step.</em></h2><p>Follow along with the screens. Tap any image for a closer look.</p></div>
+        <div id="walkthroughs"></div>
+
+        <section class="promotion-section observed-section" id="promotions"><div class="promotion-copy"><span class="eyebrow">WHAT'S INSIDE THE CLUB</span><h2>A little more<br><span class="gold-text">to discover.</span></h2><p>The welcome screen introduces offers and club events. Check the app for current eligibility, terms, and availability before taking part.</p><a class="text-link" href="#gift-code">Explore gift codes <svg class="icon"><use href="#i-arrow"/></svg></a><span class="small-note">Promotional artwork is shown for illustration. Offers may change.</span></div><button class="promotion-image image-trigger" data-image="jannat_club_welcome_bonus.jpeg" data-caption="Jannat Club welcome and promotional screen" aria-label="Enlarge welcome bonus screenshot"><img src="/images/jannat_club_welcome_bonus.jpeg" alt="Jannat Club welcome screen with promotional artwork" width="399" height="839" loading="lazy"><span class="image-expand"><svg class="icon"><use href="#i-expand"/></svg></span></button></section>
+
+        <section class="faq-section observed-section" id="faq"><div class="section-kicker"><span>A FEW THINGS YOU MIGHT BE WONDERING</span></div><h2>Good questions.<br><span class="gold-text">Clear answers.</span></h2><div class="faq-list">
+          <details><summary>What is Jannat Club?<span>+</span></summary><p>Jannat Club brings lottery, arcade, mini games, and casino-style categories into one mobile interface. This website is a visual guide to the screens and features shown in the supplied app images.</p></details>
+          <details><summary>How do I create an account?<span>+</span></summary><p>The registration screen asks for a phone number, a password, password confirmation, and an invite code where applicable. Follow <a href="#registration">the registration walkthrough</a> to understand the form.</p></details>
+          <details><summary>How do I download the Android app?<span>+</span></summary><p>See the <a href="#download">download and installation guide</a>. This preview uses a placeholder download button; no APK file is connected.</p></details>
+          <details><summary>Which payment methods appear in the app?<span>+</span></summary><p>The supplied deposit screen shows UPI QR options, USDT, and ARPay. These are screenshots, not payment services on this website. Available methods and conditions must be checked in the actual app.</p></details>
+          <details><summary>How do withdrawals work?<span>+</span></summary><p>The withdrawal screen provides bank-card, UPI, and USDT options and asks for beneficiary details. The <a href="#withdrawal">withdrawal guide</a> explains the fields. Current limits and processing conditions are set by the platform.</p></details>
+          <details><summary>Are bonuses or winnings guaranteed?<span>+</span></summary><p>No. Game outcomes are uncertain and money can be lost. Any offer is subject to its current eligibility requirements and terms. Treat games as entertainment and set a limit before playing.</p></details>
+          <details><summary>Can I register or make payments on this website?<span>+</span></summary><p>No. This is a demonstration website with dummy registration, login, and download actions. It does not create accounts, accept deposits, or process withdrawals.</p></details>
+        </div></section>
+
+        <section class="responsible-section observed-section" id="responsible-gaming"><span class="responsible-icon"><svg class="icon"><use href="#i-shield"/></svg></span><div><span class="eyebrow">ENJOY THE GAME. KNOW YOUR LIMITS.</span><h2>Keep it fun. Keep it balanced.</h2><p>For adults aged 18 and over. Set a time and spending limit, take regular breaks, and never chase losses. Games involve financial risk and are not a source of guaranteed income.</p><div class="responsible-chips"><span>18+ only</span><span>Set your limits</span><span>Take a break</span></div></div></section>
+        <section class="about-section observed-section" id="about"><div><span class="eyebrow">ABOUT THIS GUIDE</span><h2>A clearer way to explore.</h2><p>This independent guide brings Jannat Club's screens together with easy-to-follow explanations. It is an informational website and does not operate games or manage player funds.</p></div><a href="#home" class="text-link">Back to the beginning <svg class="icon"><use href="#i-arrow"/></svg></a></section>
+      </div>
+    </div>
+    <section class="closing-banner shell"><div><span class="eyebrow">YOU'RE IN THE RIGHT PLACE</span><h2>Get to know the club.</h2><p>Everything starts with a little exploration.</p></div><a class="button button-gold" href="#registration">Start with the guide <svg class="icon"><use href="#i-arrow"/></svg></a><svg class="closing-crown icon"><use href="#i-crown"/></svg></section>
+  </main>
+  <footer class="site-footer shell"><div class="footer-top"><a class="brand" href="#home"><span class="brand-mark"><svg class="icon"><use href="#i-crown"/></svg><span>J</span></span><span class="brand-name">JANNAT<span>CLUB</span><small>THE GAME STARTS HERE</small></span></a><nav aria-label="Footer"><a href="#about">About this guide</a><a href="#responsible-gaming">Responsible gaming</a><button class="text-button" data-action="contact">Contact us ↗</button></nav></div><div class="footer-bottom"><p>© 2026 Jannat Club Guide. All rights reserved.</p><span>Independent guide <i>·</i> Demo preview <i>·</i> 18+</span></div></footer>
+  <a class="back-to-top" href="#home" aria-label="Back to top">↑</a>
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <dialog class="preview-dialog" id="preview-dialog" aria-labelledby="preview-title"><button class="dialog-close" aria-label="Close preview"><svg class="icon"><use href="#i-close"/></svg></button><span class="dialog-emblem"><svg class="icon"><use href="#i-crown"/></svg></span><span class="eyebrow">JANNAT CLUB · DEMO PREVIEW</span><h2 id="preview-title"></h2><p id="preview-description"></p><a class="button button-gold" id="preview-guide-link" href="#registration">View the guide <svg class="icon"><use href="#i-arrow"/></svg></a><span class="small-note">Preview only. No account or transaction is created.</span></dialog>
+  <dialog class="image-dialog" id="image-dialog" aria-labelledby="image-caption"><div class="lightbox-header"><span id="image-caption"></span><button class="dialog-close" aria-label="Close image"><svg class="icon"><use href="#i-close"/></svg></button></div><div class="lightbox-image"><img id="expanded-image" alt=""></div><div class="lightbox-footer"><button class="lightbox-prev" aria-label="Previous image">← Previous</button><span id="image-count"></span><button class="lightbox-next" aria-label="Next image">Next →</button></div></dialog>
+</body>
+</html>
