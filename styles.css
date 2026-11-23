@@ -34,8 +34,9 @@ body{background:radial-gradient(ellipse at 12% 12%,#143b6340,transparent 40%),#0
 .brand-logo{width:194px;height:80px;object-fit:contain}
 .hero.hero-showcase{display:block;width:100%;min-height:0;padding:0 0 32px;gap:0}
 .hero-stage{background:#0a1b31}
-.hero-scene{width:100%;background:#02060d}
-.hero-scene img{display:block;width:100%;max-width:100%;height:auto}
+/* Hide only the 130px navigation strip baked into the 1600x900 poster. */
+.hero-scene{position:relative;width:100%;aspect-ratio:1600/770;overflow:hidden;background:#02060d}
+.hero-scene img{position:absolute;display:block;top:-16.883116883%;left:0;width:100%;max-width:100%;height:auto}
 
 .hero-showcase .hero-copy{padding:32px 28px;text-align:center;background:#0a1b31}
 .hero-showcase .eyebrow{display:block;font-size:12px;letter-spacing:3px;color:#eac16e}
