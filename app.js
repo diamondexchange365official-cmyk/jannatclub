@@ -5,21 +5,21 @@ const guides = [
     description: 'Start with the registration screen. Here is what each field is for.',
     steps: [['Choose your phone number', 'Use the country selector and enter the number you want to associate with your account.'], ['Create your password', 'Complete both password fields with the same password. Keep it unique to this account.'], ['Review the invite field', 'Check the invitation code if you are joining through an invite, then review the privacy agreement.'], ['Finish your registration', 'Use the Register button in the app after checking your details and the applicable terms.']],
     tip: 'Already registered? Use the Login link beneath the form instead.',
-    images: [['jannat_club_step_01_registration.jpeg', 'The phone registration screen']], action: 'register', actionLabel: 'Registration preview'
+    images: [['jannat_club_step_01_registration.jpeg', 'The phone registration screen']], action: 'register', actionLabel: 'Register via Telegram'
   },
   {
     id: 'login', number: '02', label: 'PICK UP WHERE YOU LEFT OFF', title: 'Your account. One login away.',
     description: 'The login page offers phone-number and email tabs. Choose the method associated with your account.',
     steps: [['Choose how to sign in', 'Select Phone Number or Email at the top of the form.'], ['Enter your account details', 'Fill in your registered phone number or email and your password.'], ['Return to the lobby', 'Select Log in. If you cannot remember your password, use the recovery option shown on the screen.']],
     tip: 'Avoid remembering a password on a shared device, and never share your login details.',
-    images: [['jannat_club_step_02_login.jpeg', 'Phone number and email login options']], action: 'login', actionLabel: 'Login preview'
+    images: [['jannat_club_step_02_login.jpeg', 'Phone number and email login options']], action: 'login', actionLabel: 'Log in via Telegram'
   },
   {
     id: 'download', number: '03', label: 'TAKE THE CLUB WITH YOU', title: 'From your browser to your home screen.',
     description: 'The supplied app artwork breaks Android setup into three stages: download, install, and open.', layout: 'landscape',
-    steps: [['Get the app file', 'Use a verified platform source to get the Android package. A working APK is not included in this preview.'], ['Review and install', 'Open the downloaded package, review the device prompt and requested permissions, then follow the installation flow.'], ['Open Jannat Club', 'Launch the app from your device and use the registration or login screen to continue.']],
+    steps: [['Get the app file', 'Select Download app to save full.apk to your device.'], ['Review and install', 'Open the downloaded package, review the device prompt and requested permissions, then follow the installation flow.'], ['Open Jannat Club', 'Launch the app from your device and use the registration or login screen to continue.']],
     tip: 'Check the source and the permissions before installing an app on your device.',
-    images: [['jannat_club_step_03_app_download_guide.jpeg', 'The three-part Android app setup guide']], action: 'download', actionLabel: 'App download preview'
+    images: [['jannat_club_step_03_app_download_guide.jpeg', 'The three-part Android app setup guide']], download: true
   },
   {
     id: 'deposit', number: '04', label: 'UNDERSTAND YOUR WALLET', title: 'Get familiar with the deposit screen.',
@@ -72,7 +72,7 @@ document.querySelector('#walkthroughs').innerHTML = guides.map(guide => `
   <section class="walkthrough observed-section" id="${guide.id}">
     <div class="walkthrough-header"><span class="step-number">${guide.number}</span><div><div class="step-label">${guide.label}</div><h2>${guide.title}</h2><p class="walkthrough-subtitle">${guide.description}</p></div></div>
     <div class="walkthrough-body ${guide.layout || ''}">
-      <div class="walkthrough-copy"><h3>The walkthrough</h3><ol class="step-list">${guide.steps.map(([title, text]) => `<li><strong>${title}</strong>${text}</li>`).join('')}</ol><div class="guide-tip"><strong>A little heads-up.</strong> ${guide.tip}</div>${guide.legend ? '<div class="wingo-legend"><span class="green">Green</span><span class="violet">Violet</span><span class="red">Red</span><span>Numbers 0–9</span></div>' : ''}${guide.action ? `<button class="walkthrough-action" data-action="${guide.action}">${guide.actionLabel} ${icon('arrow')}</button>` : ''}</div>
+      <div class="walkthrough-copy"><h3>The walkthrough</h3><ol class="step-list">${guide.steps.map(([title, text]) => `<li><strong>${title}</strong>${text}</li>`).join('')}</ol><div class="guide-tip"><strong>A little heads-up.</strong> ${guide.tip}</div>${guide.legend ? '<div class="wingo-legend"><span class="green">Green</span><span class="violet">Violet</span><span class="red">Red</span><span>Numbers 0–9</span></div>' : ''}${guide.download ? `<a class="walkthrough-action" href="/full.apk" download="full.apk">Download app ${icon('arrow')}</a>` : ''}${guide.action ? `<a class="walkthrough-action" href="https://t.me/JannatClubOfficial" target="_blank" rel="noopener noreferrer">${guide.actionLabel}</a>` : ''}</div>
       <div class="screenshot-stack">${guide.images.map(([filename, caption]) => `<figure class="screenshot-figure"><button class="image-trigger" data-image="${filename}" data-caption="${escapeHtml(caption)}" aria-label="Enlarge ${escapeHtml(caption)}"><img src="${imageBase}${filename}" alt="${escapeHtml(caption)}" loading="lazy" decoding="async"><span class="image-expand">${icon('expand')}</span></button><figcaption>${caption}</figcaption></figure>`).join('')}</div>
     </div>
   </section>`).join('');
@@ -105,7 +105,6 @@ const preview = document.querySelector('#preview-dialog');
 const previewContent = {
   register: {title: 'Your club journey starts here.', description: 'This is a registration preview. Explore the account setup guide while the live sign-up link is being prepared.', href: '#registration', label: 'View registration guide'},
   login: {title: 'Welcome back to the club.', description: 'The login action is a demo for now. See the login walkthrough for a closer look at the account screen.', href: '#login', label: 'View login guide'},
-  download: {title: 'The club, on your home screen.', description: 'The app download is a placeholder in this preview. Our setup guide shows the download and installation screens.', href: '#download', label: 'View the app setup guide'},
   contact: {title: 'Let’s point you in the right direction.', description: 'Contact details will be added here. In the meantime, the frequently asked questions cover the basics of this website.', href: '#faq', label: 'Explore the FAQs'}
 };
 document.addEventListener('click', event => {

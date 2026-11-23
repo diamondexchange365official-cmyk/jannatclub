@@ -6,4 +6,5 @@ const output = path.join(root, 'dist');
 await mkdir(output, {recursive:true});
 for (const file of ['index.html','styles.css','app.js']) await copyFile(path.join(root,file), path.join(output,file));
 await cp(path.join(root,'public','images'), path.join(output,'images'), {recursive:true});
+await copyFile(path.join(root,'public','full.apk'), path.join(output,'full.apk'));
 console.log('Built static website in dist/');

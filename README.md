@@ -42,8 +42,15 @@ After deployment, check `/`, `/styles.css`, `/app.js`, and an image under
 - Game category filters
 - Image viewer with keyboard navigation
 - FAQ accordions, reading progress, and guide-link sharing
-- Accessible modal previews for registration, login, download, and contact
+- Direct Android APK downloads from the hero and installation guide
+- Registration, login, and support links to the Jannat Club Telegram channel
 
-All account, payment, and download actions are dummy previews, as requested. No credentials, banking information, or payments are collected. The contact and APK links can be connected later in `app.js`.
+Download links serve the supplied `public/full.apk` as `/full.apk`. The build copies it into `dist/full.apk` for deployment. To update the download, replace `public/full.apk` and rebuild.
+
+Account links open Telegram. This guide does not collect credentials, banking information, or payments.
 
 Google Fonts supplies DM Sans and Manrope when available; system fonts provide an offline fallback.
+
+## Homepage links and artwork
+
+The homepage uses the supplied gold Jannat Club artwork with a midnight-blue theme. Telegram buttons open `https://t.me/JannatClubOfficial`. Registration, login, and support actions also open that Telegram channel, as requested. The Android download remains `/full.apk`.

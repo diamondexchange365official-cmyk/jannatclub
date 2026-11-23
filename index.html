@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#101014">
+  <meta name="theme-color" content="#071326">
   <meta name="description" content="Discover Jannat Club. Your visual guide to registration, app setup, game categories, wallet features, and more.">
-  <title>Jannat Club — Your complete game guide</title>
+  <title>Jannat Club — Register, Download &amp; Join Telegram</title>
   <link rel="icon" type="image/jpeg" href="/images/jannat_club_logo.jpeg">
   <link rel="stylesheet" href="/styles.css">
   <script src="/app.js" defer></script>
 </head>
 <body>
   <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-telegram" viewBox="0 0 24 24"><path d="m21 3-4 18-6-5-4 3 1-6L21 3ZM8 13l9-6m-6 9 1-5M8 13l-6-3L21 3"/></symbol>
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
     <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
     <symbol id="i-crown" viewBox="0 0 24 24"><path d="m3 6 4 4 5-7 5 7 4-4-2 13H5L3 6Zm3 10h12"/></symbol>
@@ -36,34 +37,32 @@
   <header class="site-header">
     <div class="header-inner shell">
       <a class="brand" href="#home" aria-label="Jannat Club home">
-        <span class="brand-mark"><svg class="icon"><use href="#i-crown"/></svg><span>J</span></span>
-        <span class="brand-name">JANNAT<span>CLUB</span><small>THE GAME STARTS HERE</small></span>
+        <img class="brand-logo" src="/images/jannat_club_wordmark.png" alt="Jannat Club" width="1672" height="941">
       </a>
       <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="#home" class="current">Home</a><a href="#guides">How it works</a><a href="#games">Games</a><a href="#faq">FAQs</a><a href="#about">About us</a>
+        <a href="#home" class="current"><svg class="icon"><use href="#i-grid"/></svg> Home</a><a href="#promotions"><svg class="icon"><use href="#i-gift"/></svg> Rewards</a><a href="#guides">How it works</a><a href="https://t.me/JannatClubOfficial" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-users"/></svg> Support</a>
       </nav>
-      <div class="header-actions"><button class="login-button" data-action="login">Log in <span>↗</span></button><button class="button button-gold button-small" data-action="register">Get started <svg class="icon"><use href="#i-arrow"/></svg></button></div>
+      <div class="header-actions"><a class="button button-telegram-outline button-small" href="https://t.me/JannatClubOfficial" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-telegram"/></svg> Join Telegram</a></div>
       <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
     </div>
-    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#home">Home</a><a href="#guides">How it works</a><a href="#games">Games</a><a href="#faq">FAQs</a><a href="#about">About us</a><button data-action="login">Log in ↗</button></nav>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#home">Home</a><a href="#guides">How it works</a><a href="#games">Games</a><a href="#faq">FAQs</a><a href="#about">About us</a><a href="https://t.me/JannatClubOfficial" target="_blank" rel="noopener noreferrer">Log in</a><a href="https://t.me/JannatClubOfficial" target="_blank" rel="noopener noreferrer">Join Telegram</a></nav>
   </header>
 
   <main id="main">
-    <section class="hero shell" id="home" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot"></span> WELCOME TO THE CLUB <span class="eyebrow-line"></span></div>
-        <h1 id="hero-title">A world of games.<br>A touch of <em>Jannat.</em></h1>
-        <p class="hero-description">Your complete guide to Jannat Club. Discover the games, find your way around, and get started with our simple, visual walkthroughs.</p>
-        <div class="hero-buttons"><button class="button button-gold" data-action="register">Explore Jannat Club <svg class="icon"><use href="#i-arrow"/></svg></button><button class="button button-outline" data-action="download"><svg class="icon"><use href="#i-download"/></svg> Download app</button></div>
-        <div class="hero-meta"><span><svg class="icon"><use href="#i-grid"/></svg> Multiple game categories</span><i></i><span><svg class="icon"><use href="#i-clock"/></svg> A guide at every step</span></div>
-        <div class="hero-note"><span>18+</span> For adults. Play responsibly. Outcomes are never guaranteed.</div>
-      </div>
-      <div class="hero-art" aria-label="Jannat Club app preview">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="art-star star-one">✦</span><span class="art-star star-two">✧</span><span class="art-star star-three">✦</span>
-        <div class="gold-disc"><img src="/images/jannat_club_logo.jpeg" alt="Jannat Club gold crown logo" width="640" height="640" fetchpriority="high"></div>
-        <div class="hero-phone"><div class="phone-camera"></div><img src="/images/jannat_club_homepage.jpeg" alt="Jannat Club home screen showing game categories" width="399" height="944" fetchpriority="high"></div>
-        <div class="floating-label"><span class="floating-icon"><svg class="icon"><use href="#i-crown"/></svg></span><span>One club. More possibilities.<small>DISCOVER YOUR NEXT GAME</small></span></div>
-        <div class="art-caption"><span></span> THE JANNAT CLUB EXPERIENCE</div>
+    <section class="hero hero-showcase shell" id="home" aria-labelledby="hero-title">
+      <div class="hero-stage">
+        <div class="hero-scene"><img src="/images/jannat_club_home_banner.png" alt="Jannat Club gold crown and wordmark, framed by gold curtains and light" width="1600" height="900" fetchpriority="high"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">WELCOME TO JANNAT CLUB</p>
+          <h1 id="hero-title">Your club. <em>Your next chapter.</em></h1>
+          <p class="hero-description">Discover Jannat Club, get the Android app, and stay connected with our Telegram community.</p>
+          <div class="hero-buttons">
+            <a class="button button-gold join-now" href="https://t.me/JannatClubOfficial" target="_blank" rel="noopener noreferrer">Register / Join Now</a>
+            <a class="button button-telegram" href="https://t.me/JannatClubOfficial" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-telegram"/></svg> Join Telegram Channel</a>
+          </div>
+          <div class="hero-secondary"><a href="/full.apk" download="full.apk"><svg class="icon"><use href="#i-download"/></svg> Download Android app</a><span aria-hidden="true">·</span><a href="https://t.me/JannatClubOfficial" target="_blank" rel="noopener noreferrer">Already a member? Log in</a></div>
+          <p class="hero-note"><span>18+</span> For adults only. Play responsibly. Outcomes are never guaranteed.</p>
+        </div>
       </div>
     </section>
 
@@ -119,20 +118,20 @@
         <section class="faq-section observed-section" id="faq"><div class="section-kicker"><span>A FEW THINGS YOU MIGHT BE WONDERING</span></div><h2>Good questions.<br><span class="gold-text">Clear answers.</span></h2><div class="faq-list">
           <details><summary>What is Jannat Club?<span>+</span></summary><p>Jannat Club brings lottery, arcade, mini games, and casino-style categories into one mobile interface. This website is a visual guide to the screens and features shown in the supplied app images.</p></details>
           <details><summary>How do I create an account?<span>+</span></summary><p>The registration screen asks for a phone number, a password, password confirmation, and an invite code where applicable. Follow <a href="#registration">the registration walkthrough</a> to understand the form.</p></details>
-          <details><summary>How do I download the Android app?<span>+</span></summary><p>See the <a href="#download">download and installation guide</a>. This preview uses a placeholder download button; no APK file is connected.</p></details>
+          <details><summary>How do I download the Android app?<span>+</span></summary><p>See the <a href="#download">download and installation guide</a>. Select Download app to save <a href="/full.apk" download="full.apk">full.apk</a> to your device, then follow the installation steps.</p></details>
           <details><summary>Which payment methods appear in the app?<span>+</span></summary><p>The supplied deposit screen shows UPI QR options, USDT, and ARPay. These are screenshots, not payment services on this website. Available methods and conditions must be checked in the actual app.</p></details>
           <details><summary>How do withdrawals work?<span>+</span></summary><p>The withdrawal screen provides bank-card, UPI, and USDT options and asks for beneficiary details. The <a href="#withdrawal">withdrawal guide</a> explains the fields. Current limits and processing conditions are set by the platform.</p></details>
           <details><summary>Are bonuses or winnings guaranteed?<span>+</span></summary><p>No. Game outcomes are uncertain and money can be lost. Any offer is subject to its current eligibility requirements and terms. Treat games as entertainment and set a limit before playing.</p></details>
-          <details><summary>Can I register or make payments on this website?<span>+</span></summary><p>No. This is a demonstration website with dummy registration, login, and download actions. It does not create accounts, accept deposits, or process withdrawals.</p></details>
+          <details><summary>Can I register or make payments on this website?<span>+</span></summary><p>No. Registration and login links connect you to the Jannat Club Telegram channel. It does not create accounts, accept deposits, or process withdrawals.</p></details>
         </div></section>
 
         <section class="responsible-section observed-section" id="responsible-gaming"><span class="responsible-icon"><svg class="icon"><use href="#i-shield"/></svg></span><div><span class="eyebrow">ENJOY THE GAME. KNOW YOUR LIMITS.</span><h2>Keep it fun. Keep it balanced.</h2><p>For adults aged 18 and over. Set a time and spending limit, take regular breaks, and never chase losses. Games involve financial risk and are not a source of guaranteed income.</p><div class="responsible-chips"><span>18+ only</span><span>Set your limits</span><span>Take a break</span></div></div></section>
         <section class="about-section observed-section" id="about"><div><span class="eyebrow">ABOUT THIS GUIDE</span><h2>A clearer way to explore.</h2><p>This independent guide brings Jannat Club's screens together with easy-to-follow explanations. It is an informational website and does not operate games or manage player funds.</p></div><a href="#home" class="text-link">Back to the beginning <svg class="icon"><use href="#i-arrow"/></svg></a></section>
       </div>
     </div>
-    <section class="closing-banner shell"><div><span class="eyebrow">YOU'RE IN THE RIGHT PLACE</span><h2>Get to know the club.</h2><p>Everything starts with a little exploration.</p></div><a class="button button-gold" href="#registration">Start with the guide <svg class="icon"><use href="#i-arrow"/></svg></a><svg class="closing-crown icon"><use href="#i-crown"/></svg></section>
+    <section class="closing-banner shell"><div><span class="eyebrow">YOU'RE IN THE RIGHT PLACE</span><h2>Get to know the club.</h2><p>Stay connected with the Jannat Club community.</p></div><a class="button button-telegram" href="https://t.me/JannatClubOfficial" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-telegram"/></svg> Join Telegram</a><svg class="closing-crown icon"><use href="#i-crown"/></svg></section>
   </main>
-  <footer class="site-footer shell"><div class="footer-top"><a class="brand" href="#home"><span class="brand-mark"><svg class="icon"><use href="#i-crown"/></svg><span>J</span></span><span class="brand-name">JANNAT<span>CLUB</span><small>THE GAME STARTS HERE</small></span></a><nav aria-label="Footer"><a href="#about">About this guide</a><a href="#responsible-gaming">Responsible gaming</a><button class="text-button" data-action="contact">Contact us ↗</button></nav></div><div class="footer-bottom"><p>© 2026 Jannat Club Guide. All rights reserved.</p><span>Independent guide <i>·</i> Demo preview <i>·</i> 18+</span></div></footer>
+  <footer class="site-footer shell"><div class="footer-top"><a class="brand" href="#home"><img class="brand-logo" src="/images/jannat_club_wordmark.png" alt="Jannat Club" width="1672" height="941"></a><nav aria-label="Footer"><a href="#about">About this guide</a><a href="#responsible-gaming">Responsible gaming</a><a href="https://t.me/JannatClubOfficial" target="_blank" rel="noopener noreferrer">Join Telegram</a></nav></div><div class="footer-bottom"><p>© 2026 Jannat Club Guide. All rights reserved.</p><span>Independent guide <i>·</i> 18+</span></div></footer>
   <a class="back-to-top" href="#home" aria-label="Back to top">↑</a>
   <div class="toast" role="status" aria-live="polite"></div>
 
